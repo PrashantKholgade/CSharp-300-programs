@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 25, b = 15;
+
+        if (a > b)
+            Console.WriteLine("A is greater");
+        else
+            Console.WriteLine("B is greater");
+    }
+}
