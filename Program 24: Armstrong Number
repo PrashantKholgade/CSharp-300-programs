@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter number: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int temp = n, sum = 0;
+
+        while (n > 0)
+        {
+            int digit = n % 10;
+            sum += digit * digit * digit;
+            n /= 10;
+        }
+
+        if (sum == temp)
+            Console.WriteLine("Armstrong");
+        else
+            Console.WriteLine("Not Armstrong");
+    }
+}
