@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = 10101;
+        bool isBinary = true;
+
+        while (num > 0)
+        {
+            int digit = num % 10;
+
+            if (digit != 0 && digit != 1)
+            {
+                isBinary = false;
+                break;
+            }
+
+            num /= 10;
+        }
+
+        Console.WriteLine(isBinary ? "Binary Number" : "Not Binary");
+    }
+}
