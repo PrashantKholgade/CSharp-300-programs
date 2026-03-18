@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter number: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int even = 0, odd = 0;
+
+        while (n > 0)
+        {
+            int digit = n % 10;
+
+            if (digit % 2 == 0)
+                even++;
+            else
+                odd++;
+
+            n /= 10;
+        }
+
+        Console.WriteLine("Even digits: " + even);
+        Console.WriteLine("Odd digits: " + odd);
+    }
+}
