@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int baseNum = 2;
+        int power = 5;
+        int result = 1;
+
+        for (int i = 1; i <= power; i++)
+            result *= baseNum;
+
+        Console.WriteLine("Result = " + result);
+    }
+}
