@@ -1,0 +1,17 @@
+// Program 142: Insertion Sort
+// Category: Intermediate
+
+using System;
+class Program {
+    static void Main() {
+        int[] arr = {12, 11, 13, 5, 6};
+        for (int i = 1; i < arr.Length; i++) {
+            int key = arr[i], j = i-1;
+            while (j >= 0 && arr[j] > key) { arr[j+1] = arr[j]; j--; }
+            arr[j+1] = key;
+        }
+        Console.Write("Sorted: ");
+        foreach (int x in arr) Console.Write(x + " ");
+        Console.WriteLine();
+    }
+}

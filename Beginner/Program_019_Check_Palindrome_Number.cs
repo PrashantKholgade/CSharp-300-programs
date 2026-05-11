@@ -1,0 +1,16 @@
+// Program 19: Check Palindrome Number
+// Category: Beginner
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter an integer: ");
+        int num = int.Parse(Console.ReadLine());
+        int orig = num, rev = 0;
+        while (num != 0) { rev = rev * 10 + num % 10; num /= 10; }
+        Console.WriteLine(orig == rev ? orig + " is a Palindrome." : orig + " is NOT a Palindrome.");
+    }
+}
